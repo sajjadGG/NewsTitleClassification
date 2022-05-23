@@ -6,5 +6,5 @@ from news_scrapper.spiders.historicalSpider import KhabarOnlineScraper
 from news_scrapper.spiders.news_spider import HuffingPostSpider
 
 process = CrawlerProcess(get_project_settings())
-process.crawl(HuffingPostSpider)
+process.crawl(RssfeedparserSpider)
 process.start()
